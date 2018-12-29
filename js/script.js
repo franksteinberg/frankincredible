@@ -162,7 +162,7 @@ function moveH (obj) {
   }
 
   $('#typeText').typed({
-    strings: ['Professional Photographer', 'Professional Web Designer', 'Professional Speaker', 'Professional Writer'],
+    strings: ['Web Engineer', 'Full-Stack Developer', 'Back-End Engineer', '...', 'Website Sorceror'],
     typeSpeed: 100,
     loop: true
   });

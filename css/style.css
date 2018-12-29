@@ -107,6 +107,10 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
+.mr-3px {
+  margin-right: 3px;
+}
+
 mark {
   background: #ff0;
   color: #000; }
@@ -6028,7 +6032,7 @@ a:focus {
   -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .media-link a:hover {
-    color: #003366; }
+    color: #3399ff; }
 
 .media-link i {
   font-size: 24px; }
@@ -6598,7 +6602,7 @@ nav {
       float: left;
       display: block;
       overflow: visible;
-      width: 11%; }
+      width: 16.666%; }
     .flexnav li a {
       border-bottom: none; }
     .flexnav li > ul {
