@@ -10,8 +10,8 @@
  */
 function removeModal () {
   'use strict';
-  $('.rex-modal').removeClass('rex-show').remove();
-  $('.rex-overlay').remove();
+  $('.theme-modal').removeClass('theme-show').remove();
+  $('.theme-overlay').remove();
 }
 
 /**
@@ -20,8 +20,8 @@ function removeModal () {
  */
 function moveH (obj) {
   'use strict';
-  var h3 = obj.find('h3.rex-portfolio-name');
-  var h4 = obj.find('h4.rex-portfolio-category');
+  var h3 = obj.find('h3.theme-portfolio-name');
+  var h4 = obj.find('h4.theme-portfolio-category');
   var hr = h3.next('hr');
 
   h3.insertAfter(hr);
@@ -108,12 +108,12 @@ function moveH (obj) {
     // Sticky Nav
     if( $( window ).width() > 1024 ){
       // stellar prallax effect
-      $('#rex-sticky').sticky({topSpacing:0});
+      $('#theme-sticky').sticky({topSpacing:0});
     }
 
     // blog Nav
     if( $( window ).width() < 991 ){
-      $('#rex-blog-slider').owlCarousel({
+      $('#theme-blog-slider').owlCarousel({
         items: 2,
         itemsDesktop: [1199,2],
         itemsDesktopSmall: [979,2],
@@ -125,7 +125,7 @@ function moveH (obj) {
       });
 
       // Experience Section
-      $('#rex-experience-slider').owlCarousel({
+      $('#theme-experience-slider').owlCarousel({
         items: 2,
         itemsDesktop: [1199,2],
         itemsDesktopSmall: [979,1],
@@ -138,7 +138,7 @@ function moveH (obj) {
 
 
       // Education Section
-      $('#rex-education-slider').owlCarousel({
+      $('#theme-education-slider').owlCarousel({
         items: 2,
         itemsDesktop: [1199,2],
         itemsDesktopSmall: [979,1],
@@ -168,7 +168,7 @@ function moveH (obj) {
   });
 
     // Activate Portfolio Filtering
-    var portfolios      = $('#rex-portfolios');
+    var portfolios      = $('#theme-portfolios');
     var figures         = portfolios.find('figure');
     var filters         = $('div.portfolio-filter');
     var first_portfolio = '';
@@ -210,13 +210,13 @@ function moveH (obj) {
         //Show the first item as featured
         var restult = $(first_portfolio).clone();
         restult
-          .removeClass('col-lg-4 col-sm-6 rex-portfolio-item animated fadeInUp')
-          .addClass('row rex-featured-portfolio dom-featured animated fadeIn')
-          .insertBefore( '#rex-portfolios' );
+          .removeClass('col-lg-4 col-sm-6 theme-portfolio-item animated fadeInUp')
+          .addClass('row theme-featured-portfolio dom-featured animated fadeIn')
+          .insertBefore( '#theme-portfolios' );
 
         moveH(restult)
           .show()
-          .closest('figure.rex-featured-portfolio.dom-featured')
+          .closest('figure.theme-featured-portfolio.dom-featured')
             .find('img')
             .addClass('col-md-6')
             .next('figcaption').removeClass('animated zoomIn').addClass('col-md-6').show();
@@ -226,7 +226,7 @@ function moveH (obj) {
 
     // Disable Portfolio Hover Effect for Touch Devices;
     if (Modernizr.touch){
-      $.each($('#rex-portfolios figure'), function() {
+      $.each($('#theme-portfolios figure'), function() {
         $(this).find('figcaption').hide();
         $(this).find('figcaption img').css('transform', 'none');
       });
@@ -235,38 +235,38 @@ function moveH (obj) {
     /**
      * Portfolio Modal
      */
-    $('#rex-portfolios').on('click', 'figure.rex-portfolio-item', function(event) {
+    $('#theme-portfolios').on('click', 'figure.theme-portfolio-item', function(event) {
       event.preventDefault();
 
       var img = $(this).find('img').attr('src');
       var caption = $(this).find('figcaption').html();
 
       var modal = '';
-      modal +='<figure class="rex-modal animated fadeIn rex-effect-1" id="modal-1">';
-        modal +='<div class="rex-content">';
+      modal +='<figure class="theme-modal animated fadeIn theme-effect-1" id="modal-1">';
+        modal +='<div class="theme-content">';
 
           modal += '<img class="img-responsive col-md-6" src="'+img+'">';
-          modal += '<figcaption class="col-md-6 rex-modal-figcaption">'+caption+'</figcaption>';
+          modal += '<figcaption class="col-md-6 theme-modal-figcaption">'+caption+'</figcaption>';
 
 
-          modal +='<button onclick="removeModal()" class="rex-close-modal"><i class="fa fa-times"></i></button>';
+          modal +='<button onclick="removeModal()" class="theme-close-modal"><i class="fa fa-times"></i></button>';
         modal +='</div>';
       modal +='</figure>';
-      modal +='<div class="rex-overlay"></div>';
+      modal +='<div class="theme-overlay"></div>';
       // var ofSet = $(this).position().top - 168;// - $(window).scrollTop();
       var ofSet = window.scrollY + 100;
       $(modal).insertBefore('#portfolio-intro').css('top',  ofSet);
-      $('.rex-modal').toggleClass('rex-show');
+      $('.theme-modal').toggleClass('theme-show');
     });
 
     // Modal Hide on outside click.
     $('body').on( 'click', function() {
 
       // Hide the Portfolio Pop-UP on Outside click;
-      $('div.rex-overlay').on('click', function() {
-        if ($('figure.rex-modal').length) {
-          $('.rex-modal').removeClass('rex-show').remove();
-          $('.rex-overlay').remove();
+      $('div.theme-overlay').on('click', function() {
+        if ($('figure.theme-modal').length) {
+          $('.theme-modal').removeClass('theme-show').remove();
+          $('.theme-overlay').remove();
         }
       });
 

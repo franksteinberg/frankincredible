@@ -9,14 +9,21 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
 
     <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
     <link rel="stylesheet" href="css/vendor/animate.min.css">
     <link rel="stylesheet" href="css/vendor/owl.carousel.css">
     <link rel="stylesheet" href="css/vendor/owl.transitions.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/modernizr.js"></script>
+	
+
+	<!-- Tailwind CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css" rel="stylesheet">
+	<!-- Any of your own CSS would go here -->
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css" rel="stylesheet">
+  
   </head>
   <body class="single">
     <!--[if lt IE 8]>
@@ -30,34 +37,21 @@
 
   <!-- Add your site or application content here -->
 
-	<header class="header" id="home">
-  <div class="container">
-    <div class="row" role="banner">
-      <div class="col-md-6">
-        <div class="logo">
-          <img src="img/temp_logo.png" alt="Logo">
-        </div>
-      </div>
-      <div class="col-md-6 header-contact-address">
-        <a href="mailto:frank@frankincredible.com">frank@frankincredible.com</a><br>
-        <a href="tel:1-305-791-3372"><i class="fa fa-phone-square mr-3px"></i>(305) 791-3372</a>
-      </div>
-    </div>
-  </div>
-</header>
+	<header class="header bg-blue-light" id="home">
+
+	</header>
 
 	<!-- nav section -->
-	<div class="main-menu">
-	<div id="rex-sticky">
+	<div class="main-menu bg-blue-darker">
+	<div id="theme-sticky">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 menu-section">
 			      
   <div class="menu-button one-page">Menu</div>
-  <nav>
-    <ul  id="navigation-menu" data-breakpoint="992" class="flexnav one-page">
+  <nav class="bg-blue-darker">
+    <ul  id="navigation-menu" class="flexnav one-page">
 	  <li><a href="#home">Home</a>
-      <li><a href="#about">About</a>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
@@ -83,7 +77,7 @@
 		<div class="hero-inner">
 	    <a href="" class="hero-logo"><img src="img/franksteinberg-profile.png" alt="Logo Image"></a>
 			<div class="hero-copy">
-				<h1><span>Welcome, I’m</span> Frank Steinberg</h1>
+				<h1 class="mb-6"><span>Welcome, I’m</span> Frank Steinberg</h1>
 				<h6 class="sub-title"><span id="typeText"></span></h6>
 				<div class="media-link">
 					<a href="https://twitter.com/frankincredible"><i class="fa fa-twitter-square"></i></a>
@@ -91,7 +85,7 @@
 					<a href="https://linkedin.com/in/franksteinberg"><i class="fa fa-linkedin-square"></i></a>
 				</div>	
 				<div class="hero-btn">
-					<a class="btn btn-default rex-primary-btn-effect" href="#" role="button">Download CV</a>
+					<a class="btn btn-default theme-primary-btn-effect" href="#" role="button">Download CV</a>
 				</div>
 			</div>
 		</div>
@@ -99,71 +93,16 @@
 	<div class="active-section" id="about">
 		<div class="about-section">
 			<div class="row">
-				<div class="col-md-6">
-					<h4>About</h4>
-					<div class="about-content">
-						<span class="active-color">Hello, I am Jordan Doe, Photographer, Web Designer, Speaker and Writer</span>
-						<p>Aenean nonummy hendrerit mauris. Donec sit Phasellus portFusce suscipit varius mium 
-						sociis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. Nulla
-						dui.Fusce feugiat malesuada odiMorbi nunc odio, gravida at, cursus nec, luctus.</p>
-						<span class="border-dashed"></span>
-						<img src="img/signature.png" alt="">
+				<div class="leading-loose m-auto w-full sm:w-4/5 lg:w-3/5">
+					<div class="about-content text-left mx-6 text-2xl">
+						<span class="active-color text-4xl">Hello, I am Frank Steinberg,</span>
+						<p class="text-justify"> 
+							A highly skilled Senior Web Engineer with deep-level programming experience and a proven ability to 
+							work with clients in multiple industries 
+							to bridge the gap between their vision and execution, guiding them through the development process, 
+							and achieving their goals for the web solutions they've envisioned.
+						</p>
 					</div>
-				</div>
-				<div class="col-md-5 col-md-offset-1">
-					<h4>Basic Information</h4>
-					<ul class="list-group">
-						<li class="list-group-item">
-							<div class="row">
-								<div class="col-md-4">
-									<h6>Address:</h6>
-								</div>
-								<div class="col-md-8">
-									<p>43/R/13  Creative Town, Bangladesh</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-group-item">
-							<div class="row">
-								<div class="col-md-4">
-									<h6>Date of Birth:</h6>
-								</div>
-								<div class="col-md-8">
-									<p>1 January, 1992</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-group-item">
-							<div class="row">
-								<div class="col-md-4">
-									<h6>Place of Birth:</h6>
-								</div>
-								<div class="col-md-8">
-									<p>Dhaka, Bangladesh</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-group-item">
-							<div class="row">
-								<div class="col-md-4">
-									<h6>Language</h6>
-								</div>
-								<div class="col-md-8">
-									<p>Bangla, English, German, French </p>
-								</div>
-							</div>
-						</li>
-						<li class="list-group-item">
-							<div class="row">
-								<div class="col-md-4">
-									<h6>Gender</h6>
-								</div>
-								<div class="col-md-8">
-									<p>Male</p>
-								</div>
-							</div>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -177,43 +116,93 @@
 							<div id="skills" class="active-section">
 	<div class="section-block skill-section">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="w-full">
 				<div class="skill-content">
 					<h4 class="title">Skills</h4>
 
-					<h6>WordPress</h6>
-					<div class="skillbar clearfix " data-percent="40%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">40%</div>
-					</div> <!-- End Skill Bar -->
+					<div class="md:flex flex-wrap">
+						<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+							<div class="px-8 py-6">
+								<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">PHP</div>
+								<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Version 5.6 - 7.2</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Laravel Framework (5.2 - 5.6)</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>PHPUnit</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Wordpress Plugin Development</li>
+								</ul>
+							</div>
+						</div>
 
-					<h6>Adobe Illustrator</h6>
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">80%</div>
-					</div> <!-- End Skill Bar -->
+						
+						<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+							<div class="px-8 py-6">
+								<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">Javascript</div>
+								<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Vue.js</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>jQuery</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>ES6</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-					<h6>Adobe Photoshop</h6>
-					<div class="skillbar clearfix " data-percent="80%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">90%</div>
-					</div> <!-- End Skill Bar -->
+					<div class="md:flex flex-wrap">			
+						<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+							<div class="px-8 py-6">
+								<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">HTML &amp; CSS</div>
+								<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>HTML5</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>CSS3</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Tailwind CSS</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Bootstrap</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Responsive</li>
+								</ul>
+							</div>
+						</div>
 
-					<h6>Photography</h6>
-					<div class="skillbar clearfix " data-percent="50%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">50%</div>
-					</div> <!-- End Skill Bar -->
-
-					<h6>Media</h6>
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">70%</div>
-					</div> <!-- End Skill Bar -->
+						<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+							<div class="px-8 py-6">
+								<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">Database Administration</div>
+								<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>MySQL</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Maria DB</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>SQLite</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Microsoft SQL Server</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Mongo DB</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="md:flex flex-wrap">
+						<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+							<div class="px-8 py-6">
+								<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">Programming Principles</div>
+								<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Test Driven Development (TDD)</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Object Oriented Programming (OOP)</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>SOLID Principles of OOP</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+							<div class="px-8 py-6">
+								<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">Project Management Methodologies</div>
+								<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Agile/Scrum</li>
+									<li><i class="fa fa-check-circle mr-2 text-green"></i>Waterfall</li>
+									
+									<li><i class="fa fa-check-circle mr-2 text-green"></i><span class="font-semibold">Ticketing Software Used:</span> JIRA, Pivotal Tracker</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-			</div>
-			<div class="col-md-6">
-				<img class="img-responsive" src="http://placehold.it/554x499" alt="">
 			</div>
 		</div>
 	</div>
@@ -226,18 +215,22 @@
 	<div class="section-block experience">
 		<h4 class="title">Work Experience</h4>
 		<div class="row">
-			<div id="rex-experience-slider">
+			<div id="theme-experience-slider">
 				<div class="listing-content">
 					<div class="col-md-2 list-img">
 						<!-- <img src="http://placehold.it/142x133" alt=""> -->
 						<div class="experience-date">
 							<h6>Jan 2017 - <br>Present</h6>
 						</div>
-						<span class="angle"></span>
 					</div>
-					<div class="col-md-10 list-description">
+					<div class="col-md-10 list-description px-6 sm:px-8 md:px-12">
 						<h6>Trader Interactive <span>/ Experienced Web Engineer</span></h6>
-						<p>As the Experienced Web Engineer on the team, I develop our API using REST principles for our client websites and internal tools to manage all aspects of client inventory, leads, and accounts. I work primarily with Laravel, a PHP framework, which we are using to leverage features such as its Eloquent ORM, Event Handling, Job Queuing, and powerful request validation. We are using a number of AWS services for hosting and managing over 1,000 client websites, and take an automation-ﬁrst approach to Continuous Integration and Deployment.</p>
+						<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+							As the Experienced Web Engineer on the team, I develop our API using REST principles for our client websites and internal tools to manage all aspects of client inventory, leads, and accounts. I work primarily with Laravel, a PHP framework, which we are using to leverage features such as its Eloquent ORM, Event Handling, Job Queuing, and powerful request validation.
+						</p>
+						<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+							We are using a number of AWS services for hosting and managing over 1,000 client websites, and take an automation-ﬁrst approach to Continuous Integration and Deployment.
+						</p>
 					</div>
 				</div>
 				<div class="listing-content">
@@ -246,11 +239,18 @@
 						<div class="experience-date">
 							<h6>Sep 2012 - <br>Jan 2017 </h6>
 						</div>
-						<span class="angle"></span>
 					</div>
-					<div class="col-md-10 list-description">
+					<div class="col-md-10 list-description px-6 sm:px-8 md:px-12">
 						<h6>Express Scripts, Inc. <span>/ Programmer Analyst</span></h6>
-						<p>I developed front-end tools and reports, including Active Patient info, Prescription Shipments data, and Billing & Reimbursement reporting. I was responsible for writing reusable and maintainable code using various frontend languages (Javascript/jQuery/HTML/CSS). Designed/maintained data using MS-SQL. Built web APIs using Adobe ColdFusion. Provided Ad-hoc SQL queries for executive staff. Lead bi-monthly web development training for team members.</p>
+						<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+							I developed front-end tools and reports, including Active Patient info, Prescription Shipments data, and Billing & Reimbursement reporting.
+						</p>
+						<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+							I was responsible for writing reusable and maintainable code using various frontend languages (Javascript/jQuery/HTML/CSS).
+						</p>
+						<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+							Designed/maintained data using MS-SQL. Built web APIs using Adobe ColdFusion. Provided Ad-hoc SQL queries for executive staff. Lead bi-monthly web development training for team members.
+						</p>
 					</div>
 				</div>
 				<div class="listing-content">
@@ -259,11 +259,12 @@
 						<div class="experience-date">
 							<h6>Nov 2012 - <br>Jan 2013</h6>
 						</div>
-						<span class="angle"></span>
 					</div>
-					<div class="col-md-10 list-description">
+					<div class="col-md-10 list-description px-6 sm:px-8 md:px-12">
 						<h6>INSTeTAG <span>/ Contract Web Developer</span></h6>
-						<p>Designed a front-end form for automobile lien holders to interface directly with Florida DMV database for entering new liens and satisfying existing liens.</p>
+						<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+							Designed a front-end form for automobile lien holders to interface directly with Florida DMV database for entering new liens and satisfying existing liens.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -279,7 +280,7 @@
 <div class="section-block education">
 	<h4 class="title">Education</h4>
 	<div class="row">
-		<div id="rex-education-slider">
+		<div id="theme-education-slider">
 			<div class="listing-content">
 				<div class="col-md-2 list-img">
 					<img src="img/education/Seal_of_Valencia_College.png" alt="Valencia College logo">
@@ -287,7 +288,12 @@
 				<div class="col-md-10 list-description">
 					<h6>Valencia College</h6>
 					<span>Associate of Arts (A.A.), Computer Science / 2011-2012</span>
-					<p>I received my Associate of Arts from Valencia College in Orlando, FL in 2012. My area of focus was Computer Science.</p>
+					<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+						I received my Associate of Arts from Valencia College in Orlando, FL in 2012.
+					</p>
+					<p class="text-justify sm:leading-loose text-2xl mb-6 lg:mb-4">
+						My area of focus was Computer Science.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -304,53 +310,27 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="map">
-					<img src="img/map.jpg" alt="">
+					<img src="img/worldmap.jpg" alt="">
 				</div>
 				<div class="address col-md-4">
 					<ul class="list-group">
 						<li class="list-group-item">
-							<h6>Address</h6>
-							<p>R/13  Creative Town, Bangladesh</p>
+							<h6>Location</h6>
+							<p class="text-2xl">Norfolk, Virginia, USA</p>
 						</li>
 						<li class="list-group-item">
 							<h6>Phone</h6>
-							<a href="tel:+00123456789">+00 (123) 456 789 ,</a>
-							<a href="tel:+88444456789">+88 (444) 456 789</a>
+							<a href="tel:1-305-791-3372" class="text-2xl hover:text-blue"><i class="fa fa-phone-square mr-3px"></i>(305) 791-3372</a>
 						</li>
 						<li class="list-group-item">
 							<h6>Email</h6>
-							<a href="mailto:frank@frankincredible.com">frank@frankincredible.com</a>
+							<a href="mailto:frank@frankincredible.com" class="text-2xl hover:text-blue">frank@frankincredible.com</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<br>
-		<br>
-		<div>
-			<h4 class="title">Feel Free To Contact Me</h4>
-			<form class="contact-forms">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Name">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Phone">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<textarea class="form-control" rows="6" placeholder="Message"></textarea>
-					</div>
-				</div>
-			</form>
-			<div class="contact-btn">
-				<a class="btn btn-default rex-primary-btn-effect-No dark-color" href="javascript:void(0)" role="button"><span>Cancel</span></a>
-				<a class="btn btn-default rex-primary-btn-effect" href="javascript:void(0)" role="button">Send</a>
-			</div>
+
 		</div>
 	</section>
 </div>
@@ -359,7 +339,7 @@
 					<footer>
 						<div class="row">
 							<div class="col-md-12">
-								<p>&copy; Copyright 2016 Jordan</p>
+								<p>&copy; Copyright 2018 Frank Steinberg</p>
 							</div>
 						</div>
 					</footer>
@@ -379,7 +359,7 @@
     <script src="js/vendor/jquery.nav.js"></script>
     <script src="js/vendor/typed.min.js"></script>
     <script src="js/vendor/jquery.scrollUp.min.js"></script>
-    <script src="js/vendor/scroll.js"></script>
+    <!-- <script src="js/vendor/scroll.js"></script> -->
     <script src="js/vendor/jquery.sticky.js"></script>
     <script src="js/vendor/jquery.flexnav.min.js"></script>
     <script src="js/vendor/masonry.pkgd.min.js"></script>
