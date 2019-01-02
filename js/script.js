@@ -1,4 +1,3 @@
-
 /*
  *----------------------------------------------------------------------
  * Functions
@@ -8,7 +7,7 @@
 /**
  * [removeModal to remove the Modal View]
  */
-function removeModal () {
+function removeModal() {
   'use strict';
   $('.theme-modal').removeClass('theme-show').remove();
   $('.theme-overlay').remove();
@@ -18,7 +17,7 @@ function removeModal () {
  * Function for re arranging Heading for the featured portfolio.
  * @param  {[jquery object]} obj [description]
  */
-function moveH (obj) {
+function moveH(obj) {
   'use strict';
   var h3 = obj.find('h3.theme-portfolio-name');
   var h4 = obj.find('h4.theme-portfolio-category');
@@ -32,11 +31,11 @@ function moveH (obj) {
 
 
 // IIFE with jQuery Wrapper
-(function($) {
+(function ($) {
   'use strict';
 
- // DOM Content Load Event Actions;
-  $( window ).load(function() {
+  // DOM Content Load Event Actions;
+  $(window).load(function () {
     $('div.loading').remove();
     $('body').removeClass('loading');
   });
@@ -46,137 +45,139 @@ function moveH (obj) {
    * Document Ready
    *----------------------------------
    */
-  $(document).ready(function() {
+  $(document).ready(function () {
 
 
-  // Reference Slider
-  $('#reference').owlCarousel({
-    items: 2,
-    itemsDesktop: [1199,2],
-    itemsDesktopSmall: [979,2],
-    itemsTablet: [768,2],
-    // autoPlay: 3500,
-    pagination: true,
-    navigation: false,
-    navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
-  });
-
-  if ( $('#skills').length ) {
-    $(window).on('scroll.skill', function() {
-      var hT = $('#skills').offset().top,
-      hH = $('#skills').outerHeight(),
-      wH = $(window).height(),
-      wS = $(this).scrollTop();
-      if (wS > (hT+hH-wH)){
-        $('.skillbar').each(function(){
-          $(this).find('.skillbar-bar').animate({
-          width:$(this).attr('data-percent')
-          },1500);
-        });
-        $(this).off('scroll.skill');
-      }
-    });
-  }
-
-  // flexNav
-
-  $('.flexnav').flexNav({
-    navArrow: '<i class="navicon fa fa-plus"></i>',
-    'animationSpeed' : 300
-  });
-
-
-
-  $(window).on('load', function () {
-    // Masonry
-    $('.grid').masonry({
-      // options...
-      itemSelector: '.grid-item'
+    // Reference Slider
+    $('#reference').owlCarousel({
+      items: 2,
+      itemsDesktop: [1199, 2],
+      itemsDesktopSmall: [979, 2],
+      itemsTablet: [768, 2],
+      // autoPlay: 3500,
+      pagination: true,
+      navigation: false,
+      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 
-  });
+    if ($('#skills').length) {
+      $(window).on('scroll.skill', function () {
+        var hT = $('#skills').offset().top,
+          hH = $('#skills').outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop();
+        if (wS > (hT + hH - wH)) {
+          $('.skillbar').each(function () {
+            $(this).find('.skillbar-bar').animate({
+              width: $(this).attr('data-percent')
+            }, 1500);
+          });
+          $(this).off('scroll.skill');
+        }
+      });
+    }
+
+    // flexNav
+
+    $('.flexnav').flexNav({
+      navArrow: '<i class="navicon fa fa-plus"></i>',
+      'animationSpeed': 300
+    });
 
 
-  // One Page Nav
-  $('#navigation-menu').onePageNav({
-    scrollThreshold: 0.8
-  });
+
+    $(window).on('load', function () {
+      // Masonry
+      $('.grid').masonry({
+        // options...
+        itemSelector: '.grid-item'
+      });
+
+    });
+
+
+    // One Page Nav
+    $('#navigation-menu').onePageNav({
+      scrollThreshold: 0.8
+    });
 
 
 
 
     // Sticky Nav
-    if( $( window ).width() > 1024 ){
+    if ($(window).width() > 1024) {
       // stellar prallax effect
-      $('#theme-sticky').sticky({topSpacing:0});
+      $('#theme-sticky').sticky({
+        topSpacing: 0
+      });
     }
 
     // blog Nav
-    if( $( window ).width() < 991 ){
+    if ($(window).width() < 991) {
       $('#theme-blog-slider').owlCarousel({
         items: 2,
-        itemsDesktop: [1199,2],
-        itemsDesktopSmall: [979,2],
-        itemsTablet: [768,2],
+        itemsDesktop: [1199, 2],
+        itemsDesktopSmall: [979, 2],
+        itemsTablet: [768, 2],
         // autoPlay: 3500,
         pagination: true,
         navigation: false,
-        navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
       });
 
       // Experience Section
       $('#theme-experience-slider').owlCarousel({
         items: 2,
-        itemsDesktop: [1199,2],
-        itemsDesktopSmall: [979,1],
-        itemsTablet: [768,1],
+        itemsDesktop: [1199, 2],
+        itemsDesktopSmall: [979, 1],
+        itemsTablet: [768, 1],
         // autoPlay: 3500,
         pagination: true,
         navigation: false,
-        navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
       });
 
 
       // Education Section
       $('#theme-education-slider').owlCarousel({
         items: 2,
-        itemsDesktop: [1199,2],
-        itemsDesktopSmall: [979,1],
-        itemsTablet: [768,1],
+        itemsDesktop: [1199, 2],
+        itemsDesktopSmall: [979, 1],
+        itemsTablet: [768, 1],
         // autoPlay: 3500,
         pagination: true,
         navigation: false,
-        navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
       });
 
     }
 
 
-  // scroll Up
-  $.scrollUp();
+    // scroll Up
+    $.scrollUp();
 
-  // Wow js
-  if( $( window ).width() > 1024 ){
-    // stellar prallax effect
-    new WOW().init();
-  }
+    // Wow js
+    if ($(window).width() > 1024) {
+      // stellar prallax effect
+      new WOW().init();
+    }
 
-  $('#typeText').typed({
-    strings: ['Web Engineer', 'Full-Stack Developer', 'Back-End Engineer', '...', 'Website Sorceror'],
-    typeSpeed: 100,
-    loop: true
-  });
+    $('#typeText').typed({
+      strings: ['Web Engineer', 'Full-Stack Developer', 'Back-End Engineer', '...', 'Website Sorceror'],
+      typeSpeed: 100,
+      loop: true
+    });
 
     // Activate Portfolio Filtering
-    var portfolios      = $('#theme-portfolios');
-    var figures         = portfolios.find('figure');
-    var filters         = $('div.portfolio-filter');
+    var portfolios = $('#theme-portfolios');
+    var figures = portfolios.find('figure');
+    var filters = $('div.portfolio-filter');
     var first_portfolio = '';
 
     figures.find('figcaption').addClass('animated');
     filters.find('div').first().addClass('active');
 
-    filters.on('click', 'div.filter', function() {
+    filters.on('click', 'div.filter', function () {
       // remove all animation properties
       figures.removeAttr('style data-wow-delay').removeClass('animated fadeIn fadeInUp');
       $('#portfolio-intro').removeAttr('style data-wow-delay').removeClass('animated fadeIn fadeInUp');
@@ -191,12 +192,12 @@ function moveH (obj) {
         $('#portfolio-intro').show().addClass('animated fadeIn');
         $('.dom-featured').remove();
         figures.show().addClass('animated fadeInUp');
-      }else{
+      } else {
         figures.hide();
         var i = 0;
         $('.dom-featured').remove();
         $('#portfolio-intro').hide();
-        $.each(figures, function(index, val) {
+        $.each(figures, function (index, val) {
           if ($(val).hasClass(currentFilter)) {
             if (i === 0) {
               first_portfolio = val;
@@ -212,21 +213,21 @@ function moveH (obj) {
         restult
           .removeClass('col-lg-4 col-sm-6 theme-portfolio-item animated fadeInUp')
           .addClass('row theme-featured-portfolio dom-featured animated fadeIn')
-          .insertBefore( '#theme-portfolios' );
+          .insertBefore('#theme-portfolios');
 
         moveH(restult)
           .show()
           .closest('figure.theme-featured-portfolio.dom-featured')
-            .find('img')
-            .addClass('col-md-6')
-            .next('figcaption').removeClass('animated zoomIn').addClass('col-md-6').show();
+          .find('img')
+          .addClass('col-md-6')
+          .next('figcaption').removeClass('animated zoomIn').addClass('col-md-6').show();
 
       }
     }); // end click
 
     // Disable Portfolio Hover Effect for Touch Devices;
-    if (Modernizr.touch){
-      $.each($('#theme-portfolios figure'), function() {
+    if (Modernizr.touch) {
+      $.each($('#theme-portfolios figure'), function () {
         $(this).find('figcaption').hide();
         $(this).find('figcaption img').css('transform', 'none');
       });
@@ -235,35 +236,35 @@ function moveH (obj) {
     /**
      * Portfolio Modal
      */
-    $('#theme-portfolios').on('click', 'figure.theme-portfolio-item', function(event) {
+    $('#theme-portfolios').on('click', 'figure.theme-portfolio-item', function (event) {
       event.preventDefault();
 
       var img = $(this).find('img').attr('src');
       var caption = $(this).find('figcaption').html();
 
       var modal = '';
-      modal +='<figure class="theme-modal animated fadeIn theme-effect-1" id="modal-1">';
-        modal +='<div class="theme-content">';
+      modal += '<figure class="theme-modal animated fadeIn theme-effect-1" id="modal-1">';
+      modal += '<div class="theme-content">';
 
-          modal += '<img class="img-responsive col-md-6" src="'+img+'">';
-          modal += '<figcaption class="col-md-6 theme-modal-figcaption">'+caption+'</figcaption>';
+      modal += '<img class="img-responsive col-md-6" src="' + img + '">';
+      modal += '<figcaption class="col-md-6 theme-modal-figcaption">' + caption + '</figcaption>';
 
 
-          modal +='<button onclick="removeModal()" class="theme-close-modal"><i class="fa fa-times"></i></button>';
-        modal +='</div>';
-      modal +='</figure>';
-      modal +='<div class="theme-overlay"></div>';
+      modal += '<button onclick="removeModal()" class="theme-close-modal"><i class="fa fa-times"></i></button>';
+      modal += '</div>';
+      modal += '</figure>';
+      modal += '<div class="theme-overlay"></div>';
       // var ofSet = $(this).position().top - 168;// - $(window).scrollTop();
       var ofSet = window.scrollY + 100;
-      $(modal).insertBefore('#portfolio-intro').css('top',  ofSet);
+      $(modal).insertBefore('#portfolio-intro').css('top', ofSet);
       $('.theme-modal').toggleClass('theme-show');
     });
 
     // Modal Hide on outside click.
-    $('body').on( 'click', function() {
+    $('body').on('click', function () {
 
       // Hide the Portfolio Pop-UP on Outside click;
-      $('div.theme-overlay').on('click', function() {
+      $('div.theme-overlay').on('click', function () {
         if ($('figure.theme-modal').length) {
           $('.theme-modal').removeClass('theme-show').remove();
           $('.theme-overlay').remove();
@@ -272,19 +273,19 @@ function moveH (obj) {
 
     });
 
-  /**
-   * Modify navigation href on single pages
-   */
-  if( $('body').hasClass('single') ) {
-    var $links = $('.flexnav li a');
-    $links.each(function () {
-      var currentHref = $(this).attr('href');
-      $(this).attr('href', './' + currentHref);
-    });
-  }
+    /**
+     * Modify navigation href on single pages
+     */
+    if ($('body').hasClass('single')) {
+      var $links = $('.flexnav li a');
+      $links.each(function () {
+        var currentHref = $(this).attr('href');
+        $(this).attr('href', './' + currentHref);
+      });
+    }
 
 
 
-  });// DOM Ready
+  }); // DOM Ready
 
 }(jQuery)); // IIFE
