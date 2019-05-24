@@ -33,13 +33,13 @@
 
 
 	<!-- Tailwind CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css" rel="stylesheet">
+	<link href="css/vendor/tailwind/preflight.min.css" rel="stylesheet">
 	<!-- Any of your own CSS would go here -->
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css" rel="stylesheet">
+	<link href="css/vendor/tailwind/utilities.min.css" rel="stylesheet">
 
 </head>
 
-<body class="single bg-teal-lightest">
+<body class="single bg-teal-100">
 	<!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -51,25 +51,25 @@
 
 	<!-- Add your site or application content here -->
 
-	<header class="header bg-blue-light w-screen" id="home">
+	<header class="header bg-blue-400" id="home">
 
 	</header>
 
 	<!-- nav section -->
-	<div class="main-menu bg-blue-darker w-screen">
+	<div class="main-menu bg-blue-800">
 		<div id="theme-sticky">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 menu-section">
 
 						<div class="menu-button one-page">Menu</div>
-						<nav class="bg-blue-darker">
+						<nav class="bg-blue-800">
 							<ul id="navigation-menu" class="flexnav one-page">
-								<li class="hover:bg-blue"><a href="#home">Home</a>
-								<li class="hover:bg-blue"><a href="#skills">Skills</a></li>
-								<li class="hover:bg-blue"><a href="#experience">Experience</a></li>
-								<li class="hover:bg-blue"><a href="#education">Education</a></li>
-								<li class="hover:bg-blue"><a href="#contact">Contact</a></li>
+								<li class="hover:bg-blue-500"><a href="#home">Home</a>
+								<li class="hover:bg-blue-500"><a href="#skills">Skills</a></li>
+								<li class="hover:bg-blue-500"><a href="#experience">Experience</a></li>
+								<li class="hover:bg-blue-500"><a href="#education">Education</a></li>
+								<li class="hover:bg-blue-500"><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -79,8 +79,8 @@
 	</div>
 
 
-	<span class="background w-screen"></span>
-	<section class="main w-screen">
+	<span class="background"></span>
+	<section class="main">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -98,9 +98,6 @@
 										<a href="https://github.com/franksteinberg"><i class="fa fa-github"></i></a>
 										<a href="https://linkedin.com/in/franksteinberg"><i class="fa fa-linkedin"></i></a>
 									</div>
-									<!-- <div class="hero-btn">
-										<a class="btn btn-default theme-primary-btn-effect bg-blue-darker active:bg-blue-darker focus: bg-blue-darkerhover:bg-blue" href="#" role="button">Download CV</a>
-									</div> -->
 								</div>
 							</div>
 						</div>
@@ -135,12 +132,12 @@
 										<h4 class="title">Skills</h4>
 
 										<div class="md:flex flex-wrap">
-											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-gray-200 hover:bg-blue-800 m-10">
 												<div class="px-8 py-6">
-													<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">
+													<div class="text-teal-800 group-hover:text-white text-3xl font-normal mb-4 font-mono">
 														PHP
 													</div>
-													<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+													<ul class="text-gray-600 group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Version 5.6 - 7.2</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Laravel Framework (5.2 - 5.6)</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>PHPUnit</li>
@@ -150,12 +147,12 @@
 											</div>
 
 
-											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-gray-200 hover:bg-blue-800 m-10">
 												<div class="px-8 py-6">
-													<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">
+													<div class="text-teal-800 group-hover:text-white text-3xl font-normal mb-4 font-mono">
 														Javascript
 													</div>
-													<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+													<ul class="text-gray-600 group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Vue.js</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>jQuery</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>ES6</li>
@@ -165,12 +162,12 @@
 										</div>
 
 										<div class="md:flex flex-wrap">
-											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-gray-200 hover:bg-blue-800 m-10">
 												<div class="px-8 py-6">
-													<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">
+													<div class="text-teal-800 group-hover:text-white text-3xl font-normal mb-4 font-mono">
 														HTML &amp; CSS
 													</div>
-													<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+													<ul class="text-gray-600 group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>HTML5</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>CSS3</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Tailwind CSS</li>
@@ -180,12 +177,12 @@
 												</div>
 											</div>
 
-											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-gray-200 hover:bg-blue-800 m-10">
 												<div class="px-8 py-6">
-													<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">
+													<div class="text-teal-800 group-hover:text-white text-3xl font-normal mb-4 font-mono">
 														Database Administration
 													</div>
-													<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+													<ul class="text-gray-600 group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>MySQL</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Maria DB</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>SQLite</li>
@@ -197,12 +194,12 @@
 										</div>
 
 										<div class="md:flex flex-wrap">
-											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-gray-200 hover:bg-blue-800 m-10">
 												<div class="px-8 py-6">
-													<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">
+													<div class="text-teal-800 group-hover:text-white text-3xl font-normal mb-4 font-mono">
 														Programming Principles
 													</div>
-													<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+													<ul class="text-gray-600 group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Test Driven Development (TDD)</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Object Oriented Programming (OOP)</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>SOLID Principles of OOP</li>
@@ -210,12 +207,12 @@
 												</div>
 											</div>
 
-											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-grey-lighter hover:bg-blue-darker m-10">
+											<div class="flex-1 min group rounded-lg overflow-hidden shadow-lg bg-gray-200 hover:bg-blue-800 m-10">
 												<div class="px-8 py-6">
-													<div class="text-teal-darker group-hover:text-white text-3xl font-normal mb-4 font-mono">
+													<div class="text-teal-800 group-hover:text-white text-3xl font-normal mb-4 font-mono">
 														Project Management Methodologies
 													</div>
-													<ul class="text-grey-darker group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
+													<ul class="text-gray-600 group-hover:text-white leading-loose text-xl sm:text-2xl md:3xl">
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Agile/Scrum</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i>Waterfall</li>
 														<li><i class="fa fa-check-circle mr-2 text-green"></i><span class="font-semibold">Software:</span> JIRA,
@@ -352,13 +349,13 @@
 												</p>
 											</li>
 											<li class="list-group-item">
-												<a href="tel:1-305-791-3372" class="hover:text-blue">
+												<a href="tel:1-305-791-3372" class="hover:text-blue-500">
 													<i class="fa fa-phone-square mr-4"></i>
 													(305) 791-3372
 												</a>
 											</li>
 											<li class="list-group-item">
-												<a href="mailto:frank@frankincredible.com" class="hover:text-blue">
+												<a href="mailto:frank@frankincredible.com" class="hover:text-blue-500">
 													<i class="fa fa-paper-plane mr-4"></i>
 													frank@frankincredible.com
 												</a>
@@ -374,7 +371,7 @@
 
 
 	<footer>
-		<div class="row">
+		<div>
 			<div class="col-md-12">
 				<p>&copy; Copyright 2018 Frank Steinberg</p>
 			</div>
